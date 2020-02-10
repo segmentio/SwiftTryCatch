@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.author           = { "William Falcon" => "waf2107@columbia.edu" }
   s.source           = { :git => "https://github.com/cfr/SwiftTryCatch.git",
                          :tag => 'master' }
-  s.platform         = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc     = true
   s.source_files     = 'SwiftTryCatch.{h,m}'
 end
